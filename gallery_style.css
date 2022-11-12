@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: staatliches, 'cursive';
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(BG3.png);
+    background-size: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+nav {
+    background-color: #051A2F;
+    border-radius: 2rem;
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    max-height: 60px;
+    width: 100vh;
+    min-width: 400px;
+}
+
+#heading {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 2rem;
+}
+
+#logo {
+    height: 58px;
+    width: 58px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu li {
+    margin: 0 2vh;
+}
+
+#nav-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #384F65;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 2rem;
+}
+
+#join-us {
+    margin-right: 1rem;
+}
+#join-us li a {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #ef4351;
+    color: antiquewhite;
+    padding: 5px 15px;
+    border-radius: 2rem;
+}
+
+#join-us li a:hover {
+    color: #FCDB04;
+    background-color: #F26974;
+    transition: 0.5s;
+}
+
+#nav-menu li a:hover {
+    background-color: #F5822F;
+    transition: 0.5s;
+}
+
+.gallery {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120vh;
+}
+
+.gallery  h1 {
+    margin: 2.5rem 0;
+    color: #06233E;
+    font-size: 5rem;
+}
+
+#album_holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.album {
+    background-color: #384F65;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.album h2 {
+    font-size: 2rem;
+    color:wheat;
+    margin-bottom: 0.5rem;
+}
+
+.album img {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 0.5rem 0.5rem 2rem 2rem ;
+}
+
+.album:hover {
+    background-color: #ef4351;
+    transition: 0.5s;
+}
+
+.footer {
+    background-color: #051A2F;
+    border-radius: 2rem;
+    display: flex;
+    flex: column wrap;
+    justify-content: space-between;
+    max-height: 60px;
+    min-width: 100vh;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+    flex-basis: 60px;
+}
+
+.footer ul {
+    display: flex;
+    flex: column wrap;
+}
+
+.footer ul li {
+    margin: 0 0.5rem;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.footer ul li a:hover {
+    color: #EF4351;
+    transition: 0.5s;
+}
+
+#copyright {
+    color: white;
+    /* margin-bottom: 5rem; */
+}

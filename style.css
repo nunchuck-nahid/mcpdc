@@ -1,0 +1,371 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: staatliches, 'cursive';
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(BG3.png);
+    background-size: repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+nav {
+    background-color: #051A2F;
+    border-radius: 2rem;
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    max-height: 60px;
+    width: 100vh;
+    min-width: 400px;
+    margin-top: 2rem;
+}
+
+#heading {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 2rem;
+}
+
+#logo {
+    height: 58px;
+    width: 58px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu li {
+    margin: 0 2vh;
+}
+
+#nav-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #384F65;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 2rem;
+}
+
+#join-us {
+    margin-right: 1rem;
+}
+#join-us li a {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #ef4351;
+    color: antiquewhite;
+    padding: 5px 15px;
+    border-radius: 2rem;
+}
+
+#join-us li a:hover {
+    color: #FCDB04;
+    background-color: #F26974;
+    transition: 0.5s;
+}
+
+#nav-menu li a:hover {
+    background-color: #F5822F;
+    transition: 0.5s;
+}
+
+.main-team {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120vh;
+}
+
+.main-team h1 {
+    margin: 2.5rem 0;
+    color: #06233E;
+    font-size: 5rem;
+}
+
+.main-team h2 {
+    color: #EF4351;
+    font-size: 5rem;
+}
+
+#TeamJackpot, #TeamKilo {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin: 5vh 0 ;
+}
+
+.team {
+    height: 50vh;
+    width: 30vh;
+    padding: 0 2vh;
+}
+
+.at-a-glance {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 120vh;
+}
+
+.at-a-glance h1 {
+    width: 100vh;
+    text-align: center;
+    color: #051A2F;
+    font-size: 5rem;
+    margin: 2.5rem 0;
+}
+
+.at-a-glance p {
+    width: 100vh;
+    line-height: 1.5rem;
+    margin: 2.5rem 0;
+    font-family: Roboto, 'sans-serif';
+}
+
+.footer {
+    background-color: #051A2F;
+    border-radius: 2rem;
+    display: flex;
+    flex: column wrap;
+    justify-content: space-between;
+    max-height: 60px;
+    min-width: 100vh;
+    margin: 2rem 0;
+    padding: 0 5rem;
+    flex-basis: 60px;
+}
+
+.footer ul {
+    display: flex;
+    flex: column wrap;
+}
+
+.footer ul li {
+    margin: 0 0.5rem;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.footer ul li a:hover {
+    color: #EF4351;
+    transition: 0.5s;
+}
+
+#copyright {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* Hamburger_Menu */
+#hamburger-menu {
+    display: none;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+#hamburger-menu span {
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: #ffff;
+  border-radius: 1rem;
+}
+
+#hamburger-menu:hover span {
+    background-color: #EF4351;
+}
+/* Hamburger_Menu */
+
+/* Hamburger Menu Bar  */
+#visible {
+    display: block;
+}
+
+.hamburger-menu-bar {
+    display: none;
+    position: fixed;
+    background-color: #010508b2;
+    width: 100%;
+    height: 100%;
+}
+
+.invisible {
+    display: none;
+}
+    
+.hamburger-nav-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 50% 0;
+}
+
+.hamburger-nav-menu li {
+    padding: 1rem 0;
+}
+
+.hamburger-nav-menu li a{
+    color: white;
+    font-size: 3rem;
+}
+
+.hamburger-nav-menu li a:hover{
+    font-size: 3.5rem;
+    color: #F26974;
+}
+
+.hamburger-nav-menu li a img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.hamburger-nav-menu li a img:hover{
+    width: 6rem;
+    height: 6rem;
+    background-color: #F26974;
+    border-radius: 50%;
+}
+
+
+/* Hamburger Menu Bar  */
+
+@media (max-width: 1090px) {
+    #nav-menu, #join-us {
+        display: none;
+    }
+    nav {
+        width: 25rem;
+        min-width: 25rem;
+        border-radius: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-team {
+        width: 25rem;
+        flex-direction: column;
+    }
+
+    #TeamJackpot, #TeamKilo {
+        flex-direction: column;
+    }
+
+    .team {
+        padding: 1vh 0;
+    }
+
+    .main-team h1 {
+        text-align: center; 
+        font-size: 3.5rem;
+     }
+
+    .main-team h2 {
+       text-align: center; 
+       font-size: 3.5rem;
+    }
+
+    .at-a-glance {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 25rem;
+        border-radius: 5rem;
+    }
+
+    .at-a-glance h1 {
+        width: 20rem;
+        font-size: 3.5rem;
+    }
+
+    .at-a-glance p {
+        width: 20rem;
+    }
+
+    .footer {
+        width: 15rem;
+        min-width: 15rem;
+        flex-direction: column;
+        max-height: none;
+        border-radius: 5rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+    }
+
+    .footer ul li {
+        padding: 0.5rem 0;
+    }
+
+    #hamburger-menu {
+        display: flex;
+    }
+}
